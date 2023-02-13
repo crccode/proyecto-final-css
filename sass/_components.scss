@@ -45,10 +45,18 @@ $color-main: #0075ff;
 
 //Creamos el componente main-menu
 .main-menu{
+    margin-bottom: 0;
     li{
         font-size: 1rem;
         font-style: none;
         display: inline;
+        a{
+            text-decoration: none;
+            color: black;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
     }
 }
 
@@ -92,7 +100,7 @@ $color-main: #0075ff;
         text-align: center;
     }
 }
-//elemento
+//elemento icon-desc
 .icon-desc{
     display: flex;
     flex-direction: column;
