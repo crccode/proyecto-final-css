@@ -49,6 +49,16 @@ $color-main: #0075ff;
         font-size: 1rem;
         font-style: none;
         display: inline;
-
     }
+}
+
+.icon-sm{
+    // Usamos este border para que nos muestre como esta 
+    //border: 1px solid black;
+    font-size: 0.75rem;
+    padding: 0.1rem 0.25rem;
+    border-radius: 50%;
+    color: $color-main;
+    //Sombras 0 en x, 0 en y 
+    box-shadow: 0 0 10px black;
 }
