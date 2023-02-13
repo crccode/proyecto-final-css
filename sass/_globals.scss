@@ -47,6 +47,7 @@ body{
 
     }
 }
+
 .sec-features{
     @include section-display();
     display: flex;
@@ -85,5 +86,40 @@ body{
                 }
             }
         }
+    }
+}
+
+.sec-benefits{
+    border-top: solid 1px black;
+    .intro{
+        @extend .sec-features, .intro;
+    }
+   .benefit-cards{
+    width: 100%;
+   }
+}
+
+.sec-kpis{
+    width: 100%;
+    background-color: components.$color-main;
+    color: white;  
+    padding: 4rem;
+    .kpi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .number{
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+        .desc{
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.sec-onboarding{
+    .intro{
+        @extend .sec-features, .intro;
     }
 }
