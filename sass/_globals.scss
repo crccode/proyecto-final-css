@@ -1,4 +1,14 @@
 @use "components";
+
+@mixin section-display{
+    //Tamaño maximo disponible que usara es 768px
+    max-width: 768px;
+    //Centramos 
+    margin: auto;
+    display: flex;
+    width: 100%;
+    padding: 3rem;
+}
 body{
     margin: 0px;
     padding: 0px;
@@ -16,14 +26,9 @@ body{
 }
 
 .sec-home{
-    //Tamaño maximo disponible que usara es 768px
-    max-width: 768px;
-    //Centramos 
-    margin: auto;
     display: flex;
-    width: 100%;
-    padding: 5rem;
     align-items: center;
+    @include section-display();
     .home-cta{
         //Ocupa el maximo disponible
         flex: 1;
@@ -40,5 +45,45 @@ body{
     }
     .home-img{
 
+    }
+}
+.sec-features{
+    @include section-display();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .intro{
+        text-align: center;
+        h3{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 0.8rem;
+            color: #888;
+        }
+    }
+    .features{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        .text{
+            padding: 2rem 0;
+            flex: 1;
+            .feature{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .description{
+                    
+                    margin-left: 1rem;
+                    .description-title{
+                        font-size: 1.25rem;
+                    }
+                    .description-text{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
     }
 }
