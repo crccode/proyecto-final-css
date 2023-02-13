@@ -52,6 +52,7 @@ $color-main: #0075ff;
     }
 }
 
+// Componente
 .icon-sm{
     // Usamos este border para que nos muestre como esta 
     //border: 1px solid black;
@@ -61,4 +62,33 @@ $color-main: #0075ff;
     color: $color-main;
     //Sombras 0 en x, 0 en y 
     box-shadow: 0 0 10px black;
+}
+
+// Componente 
+.feature{
+    display: flex;
+    flex-direction: column;
+
+    .icon{
+        color: $color-main;
+        font-size: 10rem;
+        text-align: center;
+    }
+    .description{
+        .title{
+            font-size: 2rem;
+            text-align: center;
+        }
+        .text{
+            color: black;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+    .cta{
+        margin-top: 3rem;
+        color: $color-main;
+        font-weight: 600;
+        text-align: center;
+    }
 }
