@@ -17,8 +17,8 @@
 .btn-sec, .btn-sec-s {
   padding: 0.25rem 1.5rem;
   border-radius: 0.25rem;
-  color: black;
   background-color: transparent;
+  color: black;
   border: none;
 }
 .btn-sec:hover, .btn-sec-s:hover {
@@ -27,6 +27,12 @@
 .btn-sec-s {
   font-size: 0.75rem;
   padding: 0.1rem 1rem;
+}
+
+.main-menu li {
+  font-size: 1rem;
+  font-style: none;
+  display: inline;
 }
 
 /*# sourceMappingURL=styles.css.map */

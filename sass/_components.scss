@@ -29,9 +29,9 @@ $color-main: #0075ff;
 }
 
 .btn-sec{
-    @include btn-base();
-    color: black;
+    @include btn-base(); 
     background-color: transparent;
+    color: black;
     border: none;
     &:hover{
         color: #888;
@@ -41,4 +41,14 @@ $color-main: #0075ff;
         @include btn-sm-modify();
     }
 
+}
+
+//Creamos el componente main-menu
+.main-menu{
+    li{
+        font-size: 1rem;
+        font-style: none;
+        display: inline;
+
+    }
 }
