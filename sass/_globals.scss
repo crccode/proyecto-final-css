@@ -1,3 +1,4 @@
+@use "components";
 body{
     margin: 0px;
     padding: 0px;
@@ -11,6 +12,33 @@ body{
     border-bottom: solid 1px #ddd;
 }
 .logp img{
-    width: 1rem;
-    height: 2rem;
+    max-width: 7rem;
+}
+
+.sec-home{
+    //Tamaño maximo disponible que usara es 768px
+    max-width: 768px;
+    //Centramos 
+    margin: auto;
+    display: flex;
+    width: 100%;
+    padding: 5rem;
+    align-items: center;
+    .home-cta{
+        //Ocupa el maximo disponible
+        flex: 1;
+        .cta-text{
+            color: components.$color-main;
+            i{
+                font-weight: 600;
+            }
+        }
+        .home-title{
+            width: 20rem;
+            font-size: 3rem;
+        }
+    }
+    .home-img{
+
+    }
 }

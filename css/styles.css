@@ -110,8 +110,29 @@ body {
 }
 
 .logp img {
-  width: 1rem;
-  height: 2rem;
+  max-width: 7rem;
+}
+
+.sec-home {
+  max-width: 768px;
+  margin: auto;
+  display: flex;
+  width: 100%;
+  padding: 5rem;
+  align-items: center;
+}
+.sec-home .home-cta {
+  flex: 1;
+}
+.sec-home .home-cta .cta-text {
+  color: #0075ff;
+}
+.sec-home .home-cta .cta-text i {
+  font-weight: 600;
+}
+.sec-home .home-cta .home-title {
+  width: 20rem;
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
