@@ -92,3 +92,20 @@ $color-main: #0075ff;
         text-align: center;
     }
 }
+//elemento
+.icon-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .icon{
+        color: $color-main;
+        font-size: 10rem;
+        padding: 0;
+    }
+    .title{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: -2rem;
+    }
+}
