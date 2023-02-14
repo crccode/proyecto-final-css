@@ -122,4 +122,16 @@ body{
     .intro{
         @extend .sec-features, .intro;
     }
+    .steps{
+        padding: 0.7rem 5rem 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .step-separator{
+            border-top: 2px solid #ddd;
+            flex: 1;
+            margin: 0 1rem;
+        }
+    }
 }

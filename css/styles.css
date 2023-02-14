@@ -85,7 +85,7 @@
   align-items: center;
   justify-content: center;
 }
-.icon-desc .icon {
+.icon-desc i {
   color: #0075ff;
   font-size: 10rem;
   padding: 0;
@@ -204,6 +204,19 @@ body {
 }
 .sec-kpis .kpi .desc {
   font-size: 0.9rem;
+}
+
+.sec-onboarding .steps {
+  padding: 0.7rem 5rem 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.sec-onboarding .steps .step-separator {
+  border-top: 2px solid #ddd;
+  flex: 1;
+  margin: 0 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
