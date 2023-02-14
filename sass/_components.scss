@@ -10,6 +10,7 @@
 }
 //Guardamos en una variable el color principal
 $color-main: #0075ff;
+$color-footer: #f4f8fe;
 //Creamos nusteros botones 
 .btn-main{
     @include btn-base();
